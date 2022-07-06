@@ -1,0 +1,9 @@
+DATA 	SEGMENT
+     	ORG 20H
+     	NUM1=8
+     	NUM2=NUM1+10H
+		DA1  DB ‘IBM PC’
+     	DA2  DB 0AH, 0DH
+		COUNT EQU $-DA1
+		DATA	ENDS
+ 		END

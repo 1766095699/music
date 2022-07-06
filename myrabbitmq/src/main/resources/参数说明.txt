@@ -1,0 +1,10 @@
+导入这个mq的分布式事务框架的服务要配置的参数如下。rb.resendTimes是规定最大重试次数,rb.resendFreq是指定消息重发频率,注意保证消息幂等性
+rb.service=orderService
+rb.host=115.159.220.44
+rb.port=5672
+rb.username=guest
+rb.password=guest
+rb.vhost=/
+rb.resendTimes=6
+#spring.rabbitmq.listener.simple.retry.max-attempts=5
+rb.resendFreq=30000
